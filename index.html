@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html ng-app='myApp' ng-controller="LanguageController">
+<head>
+	<title>GoSport - Multi Sports Center</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- style of the page -->
+	<link rel="stylesheet" type="text/css" href="css/style-all.css">
+
+	
+	<script src='https://code.angularjs.org/snapshot/angular.min.js'></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/leftnav.js"></script>
+	<script type="text/javascript" src="js/language.js"></script>
+</head>
+<body>
+<div class="nav-scroller">
+<nav class="left-nav" ng-controller="NavCtrl">
+	
+		<collection collection='navdata'></collection>
+	
+</nav>
+</div>
+<section class="head-section move-section" id="home">
+	<div class="row">
+		
+
+		<div class="language-btn-container switch-toggle" ng-model='lang'>
+			<input id="en-lang" name="view" type="radio" class="EN">
+		    <label ng-click='selectedLanguageF("EN")' for="en-lang" onclick="">EN</label>
+			|
+		    <input id="da-lang" name="view" type="radio" class="DA">
+		    <label ng-click='selectedLanguageF("DA")' for="da-lang" onclick="">DA</label>
+		    |
+		    <input id="fr-lang" name="view" type="radio" class="FR">
+		    <label ng-click='selectedLanguageF("FR")' for="fr-lang" onclick="">FR</label>
+		</div>
+
+		<div class="col-xs-12 col-md-12 slider-container">
+			<span><colortext>GO</colortext>PLAY</span>
+			<span ng-bind='selectedLanguage.GENERAL.MultiSportsCenter'>Multi Sports Center</span>
+		</div>
+		
+		
+
+		<div class="hidden-xs col-sm-12 col-md-12 sports-icons">
+			<div class="row">
+				<div class="col-sm-2 col-md-2 col-lg-1 icon-container" style="background-image: url(img/icons/icon-8.svg);">
+					<a href="#skateboarding-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.STATEBOARDING">Skateboarding</span></a>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-1 icon-container" style="background-image: url(img/icons/icon-2.svg);">
+					<a href="#bodybuilding-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.BODYBILDING">Bodybuilding</span></a>
+				</div>
+				<div class="hidden-xs hidden-sm hidden-md col-lg-2 icon-container" style="background-image: url(img/icons/icon-3.svg);">
+					<a href="#cycling-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.CYCLING">Cycling</span></a>
+				</div>
+				<div class="hidden-xs hidden-sm hidden-md col-lg-1 icon-container" style="background-image: url(img/icons/icon-4.svg);">
+					<a href="#barashout-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.BARASHOUT">Barashout</span></a>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-1 icon-container" style="background-image: url(img/icons/icon-5.svg);">
+					<a href="#tennis-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.TENNIS">Tennis</span></a>
+				</div>
+				<div class="hidden-xs hidden-sm hidden-md col-lg-2 icon-container" style="background-image: url(img/icons/icon-6.svg);">
+					<a href="#ice-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.ICEHOCKEY">Ice hockey</span></a>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-1 icon-container" style="background-image: url(img/icons/football.svg);">
+					<a href="#football-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.FOOTBALL">Football</span></a>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-1 icon-container" style="background-image: url(img/icons/icon-1.svg);">
+					<a href="#rollskater-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.ROLLSKATER">Rollskater</span></a>
+				</div>
+				<div class="hidden-xs hidden-sm hidden-md col-lg-1 icon-container" style="background-image: url(img/icons/icon-9.svg);">
+					<a href="#swimming-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.SWIMMING">Swimming</span></a>
+				</div>
+				<div class="col-sm-2 col-md-2 col-lg-1 icon-container" style="background-image: url(img/icons/icon-10.svg);">
+					<a href="#scooter-section"><span ng-bind="selectedLanguage.SPORTSSECTIONS.SCOOTER">Scooter</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="tennis-section section move-section right-img" id="tennis-section">
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.TENNIS">Tennis</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-sm-push-7 col-md-3 col-md-push-7 right-part">
+			<img src="img/icons/icon-5.svg" class="img-responsive" />
+		</div>
+		<div class="col-xs-12 col-sm-7 col-sm-pull-5 col-md-offset-2 col-md-5 col-md-pull-3 details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="rollskater-section section move-section left-img" id="rollskater-section">
+	
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.ROLLSKATER">Rollskater</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-md-3 col-md-offset-2 left-part">
+			<img src="img/icons/icon-11.svg" class="img-responsive" />
+		</div>
+		<div class="col-sm-7 col-md-5 section-left details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="football-section section move-section right-img" id="football-section">
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.FOOTBALL">Football</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-sm-push-7 col-md-3 col-md-push-7 right-part">
+			<img src="img/icons/football.svg" class="img-responsive" />
+		</div>
+		<div class="col-xs-12 col-sm-7 col-sm-pull-5 col-md-offset-2 col-md-5 col-md-pull-3 details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="bodybuilding-section section move-section left-img" id="bodybuilding-section">
+	
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.BODYBILDING">Bodybuilding</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-md-3 col-md-offset-2 left-part">
+			<img src="img/icons/icon-2.svg" class="img-responsive" />
+		</div>
+		<div class="col-sm-7 col-md-5 section-left details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="skateboarding-section section move-section right-img" id="skateboarding-section">
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.STATEBOARDING">skateboarding</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-sm-push-7 col-md-3 col-md-push-7 right-part">
+			<img src="img/icons/icon-8.svg" class="img-responsive" />
+		</div>
+		<div class="col-xs-12 col-sm-7 col-sm-pull-5 col-md-offset-2 col-md-5 col-md-pull-3 details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="cycling-section section move-section left-img" id="cycling-section">
+	
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.CYCLING">Cycling</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-md-3 col-md-offset-2 left-part">
+			<img src="img/icons/icon-3.svg" class="img-responsive" />
+		</div>
+		<div class="col-sm-7 col-md-5 section-left details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="barashout-section section move-section right-img" id="barashout-section">
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.BARASHOUT">Barashout</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-sm-push-7 col-md-3 col-md-push-7 right-part">
+			<img src="img/icons/icon-4.svg" class="img-responsive" />
+		</div>
+		<div class="col-xs-12 col-sm-7 col-sm-pull-5 col-md-offset-2 col-md-5 col-md-pull-3 details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="ice-section section move-section left-img" id="ice-section">
+	
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.ICEHOCKEY">Ice hockey</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-md-3 col-md-offset-2 left-part">
+			<img src="img/icons/icon-6.svg" class="img-responsive" />
+		</div>
+		<div class="col-sm-7 col-md-5 section-left details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="swimming-section section move-section right-img" id="swimming-section">
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.SWIMMING">Swimming</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-sm-push-7 col-md-3 col-md-push-7 right-part">
+			<img src="img/icons/icon-9.svg" class="img-responsive" />
+		</div>
+		<div class="col-xs-12 col-sm-7 col-sm-pull-5 col-md-offset-2 col-md-5 col-md-pull-3 details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="scooter-section section move-section left-img" id="scooter-section">
+	<div class="row">
+		<div class="col-md-12 col-lg-12 section-title">
+			<h2 ng-bind="selectedLanguage.SPORTSSECTIONS.SCOOTER">Scooter</h2>
+			<span></span>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-md-3 col-md-offset-2 left-part">
+			<img src="img/icons/icon-10.svg" class="img-responsive" />
+		</div>
+		<div class="col-sm-7 col-md-5 section-left details-part">
+			<span class="glyphicon glyphicon-thumbs-up"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUT">About</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORT">If you can’t adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.</p>
+			<p class="note" ng-bind="selectedLanguage.SPORTSSECTIONS.ABOUTSPORTEXTRA">Sports reduce stress and depression</p>
+			<span class="glyphicon glyphicon-usd"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.PRICES">Prices</h3>
+			<ul>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI1">Rent a place: pay per hour 50Kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI2">Do monthly card only 300kr.</li>
+				<li ng-bind="selectedLanguage.SPORTSSECTIONS.PRICESLI3">Play with coaching, contact us for that.</li>
+			</ul>
+			
+			
+			<span class="glyphicon glyphicon-tasks"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONS">Instructions</h3>
+				<ul>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI1">To avoid injuries we recommend visiting sections corresponding to your level of training.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI2">During exercises it is advisable not to use mobile phones.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI3">Training at the Center must be completed 20 minutes before closing time.</li>
+					<li ng-bind="selectedLanguage.SPORTSSECTIONS.INSTRUCTIONSLI4">max number of players depends on the sport type.</li>
+				</ul>
+			<span class="glyphicon glyphicon-scissors"></span><h3 ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENT">Equipment</h3>
+			<p ng-bind="selectedLanguage.SPORTSSECTIONS.EQUIPMENTP1">Equipments are free, but you are welcome to bring your own.</p>
+			<button class="btn btn-success book-time-btn" ng-bind="selectedLanguage.SPORTSSECTIONS.BOOKBTN">Book GoSport</button>
+		</div>
+		
+	</div>
+</section>
+<section class="footer-section move-section">
+	<div class="row">
+		<div class="col-md-12">
+			<span></span>
+		</div>
+	</div>
+</section>
+
+
+<div class="">
+	<button class="left-nav-btn-container">
+		<span>toggle menu</span>
+	</button>
+</div>
+
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- gosport Script -->
+    <script src="js/gosport.js"></script>
+
+</body>
+</html>

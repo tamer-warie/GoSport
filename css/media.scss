@@ -1,0 +1,119 @@
+@media (min-width: 768px){
+	.sports-icons div.icon-container span{
+		font-size: 1.6vw;
+	}
+	.head-section{
+		height:100%;
+		min-height:690px;
+		max-height: 730px;
+	}
+	.section .section-title h2{
+	    font-size: 55px;
+	}
+	.move-section-toggled{
+		margin-left:300px;
+	}
+	.nav-scroller{
+		width:330px;
+		height:100vh;
+	    background-color: #0d3755;
+		position:fixed;
+		left:-300px;
+		top:0;
+		overflow-y:scroll;
+		transition: left 1s;
+		padding-right:50px;
+	}
+	.left-nav{
+		width:300px;
+	}
+	.nav-scroller-active{
+		left:0px;
+	}
+	
+	.left-nav-btn-container {
+		width: 76px;
+  		height: 76px;
+  		right: 50px;
+	}
+	.left-nav-btn-container span {
+	    top: 35px;
+	    left: 11px;
+	    right: 11px;
+	    height: 6px;
+	}
+	.left-nav-btn-container span::before,
+	.left-nav-btn-container span::after {
+	  height: 6px;
+	}
+	.left-nav-btn-container span::before {
+	  top: -20px;
+	}
+
+	.left-nav-btn-container span::after {
+	  bottom: -20px;
+	}
+	.left-nav-btn-container.is-active {
+	  left:300px;
+	  
+	}
+	
+	.language-btn-container input[type="radio"] + label {
+	    padding:5px;
+	}
+	.slider-container span:first-child{
+	    font-size: 70px;
+	    font-weight: 600;
+	    margin-top: 80px;
+	}
+	.slider-container span:nth-child(2){
+	    font-size: 31px;
+	    font-weight: 300;
+	    margin-top: 171px;
+	    margin-left: -174px;
+	}
+	.left-nav> ul> li span:hover{
+	background-color: #0c446b;
+	padding-left:30px;
+	}
+	.left-nav> ul> li ul li span:hover{
+		background-color: #1a4e73;
+		padding-left:40px;
+	}	
+	.left-nav> ul> li ul li ul li span:hover{
+		background-color: #3180b9;
+		padding-left:60px;
+	}	
+	.left-nav ul li span:hover:after{
+		width: 7px;
+	}
+	.left-nav ul li span:hover:before{
+		transform: rotate(90deg);
+	}
+}
+
+
+@media (min-width: 992px){
+	.sports-icons div.icon-container span{
+		font-size: 1.4vw;
+	}
+	.slider-container span:first-child{
+	    font-size: 90px;
+	    font-weight: 600;
+	}
+	.slider-container span:nth-child(2){
+	    font-size: 41px;
+	    font-weight: 300;
+	    margin-top: 192px;
+	    margin-left: -224px;
+	}
+	
+}
+@media (min-width: 1200px){
+	.sports-icons div.icon-container{
+	}
+	.sports-icons div.icon-container span{
+		font-size: 1.1vw;
+	}
+	
+}

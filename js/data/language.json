@@ -1,0 +1,140 @@
+{
+	"EN":{
+		"NAV":{
+			"HOME":"Home",
+			"ABOUTUS":"About us",
+			"CONTACTUS":"Contact us",
+			"SPORTS":"Sports",
+			"ACTIVITIES":"Activities",
+			"EVENTS":"Events",
+			"REGISTER":"Register",
+			"LOGIN":"Log in",
+			"OPENINGHOURS":"Opening hours",
+			"LOCATION":"Location",
+			"SERVICES":"Services"
+		},
+		"GENERAL":{
+			"MultiSportsCenter":"Multi Sports Center"
+		},
+		"SPORTSSECTIONS":{
+			"TENNIS":"Tennis",
+			"STATEBOARDING":"Skateboarding",
+			"BODYBILDING":"Bodybuilding",
+			"CYCLING":"Cycling",
+			"BARASHOUT":"Barashout",
+			"ICEHOCKEY":"Ice hockey",
+			"FOOTBALL":"Football",
+			"ROLLSKATER":"Rollskater",
+			"SWIMMING":"Swimming",
+			"SCOOTER":"Scooter",
+			"ABOUT":"About",
+			"ABOUTSPORT":"If you can not adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.",
+			"ABOUTSPORTEXTRA":"Sports reduce stress and depression",
+			"PRICES":"Prices",
+			"PRICESLI1":"Rent a place: pay per hour 50Kr.",
+			"PRICESLI2":"Do monthly card only 300kr.",
+			"PRICESLI3":"Play with coaching, contact us for that.",
+			"INSTRUCTIONS":"Instructions",
+			"INSTRUCTIONSLI1":"To avoid injuries we recommend visiting sections corresponding to your level of training.",
+			"INSTRUCTIONSLI2":"During exercises it is advisable not to use mobile phones.",
+			"INSTRUCTIONSLI3":"Training at the Center must be completed 20 minutes before closing time.",
+			"INSTRUCTIONSLI4":"max number of players depends on the sport type.",
+			"EQUIPMENT":"Equipment",
+			"EQUIPMENTP1":"Equipments are free, but you are welcome to bring your own.",
+			"BOOKBTN":"Book GoSport"
+		}
+				
+	},
+	"DA":{
+		"NAV":{
+			"HOME":"Hjme",
+			"ABOUTUS":"Om os",
+			"CONTACTUS":"kontakt os",
+			"SPORTS":"Sport",
+			"ACTIVITIES":"Aktiviteter",
+			"EVENTS":"Begivenheder",
+			"REGISTER":"Tilmeld",
+			"LOGIN":"Log på",
+			"OPENINGHOURS":"Åbningstider",
+			"LOCATION":"Sted",
+			"SERVICES":"Services"
+		},
+		"GENERAL":{
+			"MultiSportsCenter":"Multi Sports D-Center"
+		},
+		"SPORTSSECTIONS":{
+			"TENNIS":"Tennis",
+			"STATEBOARDING":"Skateboarding",
+			"BODYBILDING":"Bodybuilding",
+			"CYCLING":"Cykling",
+			"BARASHOUT":"loftbalon",
+			"ICEHOCKEY":"Ishockey",
+			"FOOTBALL":"Fodbold",
+			"ROLLSKATER":"Rulleskøjter",
+			"SWIMMING":"Svømning",
+			"SCOOTER":"Scooter",
+			"ABOUT":"Om Sport",
+			"ABOUTSPORT":"Hvis du ikke kan tilpasse til din modstander, skal du forbedre dit spil og gå op på færdighedsniveau. Så kom dig ud og forbedre dit spil, øge din selvtillid og forbedre dit humør.",
+			"ABOUTSPORTEXTRA":"Sport reducerer stress og depression",
+			"PRICES":"Priserne",
+			"PRICESLI1":"Lej et sted: pay per time 50Kr.",
+			"PRICESLI2":"Gør månedskort kun 300kr.",
+			"PRICESLI3":"Spil med coaching, kontakt os for det.",
+			"INSTRUCTIONS":"Instruktioner",
+			"INSTRUCTIONSLI1":"For at undgå skader anbefaler vi at besøge sektioner svarende til dit uddannelsesniveau.",
+			"INSTRUCTIONSLI2":"Under øvelser er det tilrådeligt ikke at bruge mobiltelefoner.",
+			"INSTRUCTIONSLI3":"Træning ved centret skal være afsluttet 20 minutter før lukketid.",
+			"INSTRUCTIONSLI4":"Maks antal spillere afhænger af sportstypen.",
+			"EQUIPMENT":"Udstyr",
+			"EQUIPMENTP1":"Udstyr er gratis, men du er velkommen til at medbringe din egen.",
+			"BOOKBTN":"Bestil DGoSport"
+		}
+				
+	},
+	"FR":{
+		"NAV":{
+			"HOME":"Home",
+			"ABOUTUS":"About us",
+			"CONTACTUS":"Contact us",
+			"SPORTS":"Sports",
+			"ACTIVITIES":"Activities",
+			"EVENTS":"Events",
+			"REGISTER":"Register",
+			"LOGIN":"Log in",
+			"OPENINGHOURS":"Opening hours",
+			"LOCATION":"Location",
+			"SERVICES":"Services"
+		},
+		"GENERAL":{
+			"MultiSportsCenter":"Multi Sports F-Center"
+		},
+		"SPORTSSECTIONS":{
+			"TENNIS":"FTennis",
+			"STATEBOARDING":"Skateboarding",
+			"BODYBILDING":"Bodybuilding",
+			"CYCLING":"Cycling",
+			"BARASHOUT":"Barashout",
+			"ICEHOCKEY":"Ice hockey",
+			"FOOTBALL":"Football",
+			"ROLLSKATER":"Rollskater",
+			"SWIMMING":"Swimming",
+			"SCOOTER":"Scooter",
+			"ABOUT":"About",
+			"ABOUTSPORT":"If you can not adapt to your opponent, improve your game, and move up in skill level. So get out there and improve your game, boost your self-confidence and improve your mood.",
+			"ABOUTSPORTEXTRA":"Sports reduce stress and depression",
+			"PRICES":"Prices",
+			"PRICESLI1":"Rent a place: pay per hour 50Kr.",
+			"PRICESLI2":"Do monthly card only 300kr.",
+			"PRICESLI3":"Play with coaching, contact us for that.",
+			"INSTRUCTIONS":"Instructions",
+			"INSTRUCTIONSLI1":"To avoid injuries we recommend visiting sections corresponding to your level of training.",
+			"INSTRUCTIONSLI2":"FDuring exercises it is advisable not to use mobile phones.",
+			"INSTRUCTIONSLI3":"Training at the Center must be completed 20 minutes before closing time.",
+			"INSTRUCTIONSLI4":"max number of players depends on the sport type.",
+			"EQUIPMENT":"Equipment",
+			"EQUIPMENTP1":"Equipments are free, but you are welcome to bring your own.",
+			"BOOKBTN":"Book FGoSport"
+		}
+				
+	}
+}

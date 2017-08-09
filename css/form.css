@@ -1,0 +1,38 @@
+/* btn */
+.btn-go{
+	background-color: #0a4d7d;
+	color: #fff;
+}
+.btn-go:hover{
+	background-color: #0d3755;
+	color: #fff;
+}
+.btn-go:focus,.btn-go:active{
+	color: #fff;
+}
+form{
+	padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    border-left-color: #0a4d7d;
+}
+form label{
+	color: #0a4d7d;
+}
+.form-control {
+	border-radius: 0;
+}
+.error{
+	color: red;
+}
+input.ng-invalid.ng-touched{
+	border:1px red solid;
+}
+input.ng-valid.ng-touched{
+	border:1px #0eca0e solid;
+}
+.ng-invalid .btn-go{
+	background-color: #ccc;
+}

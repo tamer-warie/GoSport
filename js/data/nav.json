@@ -1,0 +1,171 @@
+[
+	{
+		"name": "Home" ,
+		"languageKey":"HOME",
+		"link": "#home"
+	},
+	{
+		"name": "About" ,
+		"languageKey":"ABOUT",
+		"link": "#"
+	},
+	{
+		"name": "Contact" ,
+		"languageKey":"HOME",
+		"link": "form.html"
+	},
+	{
+		"name": "Sports",
+		"languageKey":"HOME",
+		"link": "#",
+		"children": [
+			{
+				"name":"Football",					
+				"languageKey":"FOOTBALL",
+				"link":"#football-section"
+			},
+			{
+				"name":"Tennis",
+				"languageKey":"TENNIS",
+				"link":"#tennis-section"
+			},
+			{
+				"name":"Ice hockey",
+				"languageKey":"ICEHOCKEY",
+				"link":"#ice-section"
+			},
+			{
+				"name":"Rollskater",
+				"languageKey":"ROLLSKATER",
+				"link":"#rollskater-section"
+			},
+			{
+				"name":"Skateboarding",
+				"languageKey":"STATEBOARDING",
+				"link":"#skateboarding-section"
+			},
+			{
+				"name":"Bodybuilding",
+				"languageKey":"BODYBILDING",
+				"link":"#bodybuilding-section"
+			},
+			{
+				"name":"Cycling",
+				"languageKey":"CYCLING",
+				"link":"#cycling-section"
+			},
+			{
+				"name":"Barashout",
+				"languageKey":"BARASHOUT",
+				"link":"#barashout-section"
+			},
+			{
+				"name":"Swimming",
+				"languageKey":"SWIMMING",
+				"link":"#swimming-section"
+			},
+			{
+				"name":"Scooter",
+				"languageKey":"SCOOTER",
+				"link":"#scooter-section"
+			}
+
+		]
+	},
+	{
+		"name": "Activities" ,
+		
+		"languageKey":"HOME",
+		"link": "#"
+	},
+	{
+		"name": "Events",
+		
+		"languageKey":"HOME",
+		"link": "#",
+		"children":[
+			{
+				"name":"Sport events",
+				
+		"languageKey":"HOME",
+		"link": "#",
+				"children":[
+					{
+						"name":"Marathon wormup 1" ,
+						
+		"languageKey":"HOME",
+		"link": "#"
+					},
+					{
+						"name":"Fance Cup",
+						
+		"languageKey":"HOME",
+		"link": "#"
+					},
+					{
+						"name":"Club MS",
+						
+		"languageKey":"HOME",
+		"link": "#"
+					}
+				]
+			},
+			{
+				"name":"Night events",
+				
+		"languageKey":"HOME",
+		"link": "#"
+			},
+			{
+				"name":"BBQ events",
+				
+		"languageKey":"HOME",
+		"link": "#"
+			}
+		]	
+	},
+	{
+		"name":"Register",
+		
+		"languageKey":"HOME",
+		"link": "#"
+	},
+	{
+		"name":"Log in",
+		
+		"languageKey":"HOME",
+		"link": "#"
+	},
+	{
+		"name":"Opening hours",
+		
+		"languageKey":"HOME",
+		"link": "#"
+	},
+	{
+		"name":"Location",
+		
+		"languageKey":"HOME",
+		"link": "#"
+	},
+	{
+		"name":"Services",
+		
+		"languageKey":"HOME",
+		"link": "#",
+		"children":[
+			{
+				"name":"Return",
+				
+		"languageKey":"HOME",
+		"link": "#"
+			},
+			{
+				"name":"Fix",
+				
+		"languageKey":"HOME",
+		"link": "#"
+			}
+		]
+	}
+]

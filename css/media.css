@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+  .sports-icons div.icon-container span {
+    font-size: 1.6vw; }
+  .head-section {
+    height: 100%;
+    min-height: 690px;
+    max-height: 730px; }
+  .move-section-toggled {
+    margin-left: 300px; }
+  
+  .language-btn-container input[type="radio"] + label {
+    padding: 5px; }
+  .slider-container span:first-child {
+    font-size: 70px;
+    font-weight: 600; }
+  .slider-container span:nth-child(2) {
+    font-size: 31px;
+    font-weight: 300;
+    margin-top: 91px;
+    margin-left: -174px; } }
+
+@media (min-width: 992px) {
+  .sports-icons div.icon-container span {
+    font-size: 1.4vw; }
+  .slider-container span:first-child {
+    font-size: 90px;
+    font-weight: 600; }
+  .slider-container span:nth-child(2) {
+    font-size: 41px;
+    font-weight: 300;
+    margin-top: 112px;
+    margin-left: -224px; } }
+
+@media (min-width: 1200px) {
+  .sports-icons div.icon-container span {
+    font-size: 1.1vw; } }
+
+/*# sourceMappingURL=media.css.map */
